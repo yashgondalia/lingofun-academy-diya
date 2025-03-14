@@ -1,15 +1,14 @@
-
-import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
-import Logo from './Logo';
-import { cn } from '@/lib/utils';
+import React, { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
+import Logo from "./Logo";
+import { cn } from "@/lib/utils";
 
 const navLinks = [
-  { name: 'Home', href: '#home' },
-  { name: 'About', href: '#about' },
-  { name: 'Founder', href: '#founder' },
-  { name: 'Courses', href: '#courses' },
-  { name: 'Contact', href: '#contact' },
+  { name: "Home", href: "#home" },
+  { name: "About", href: "#about" },
+  { name: "Founder", href: "#founder" },
+  { name: "Courses", href: "#courses" },
+  { name: "Contact", href: "#contact" },
 ];
 
 const Navbar: React.FC = () => {
@@ -25,9 +24,9 @@ const Navbar: React.FC = () => {
       }
     };
 
-    document.addEventListener('scroll', handleScroll);
+    document.addEventListener("scroll", handleScroll);
     return () => {
-      document.removeEventListener('scroll', handleScroll);
+      document.removeEventListener("scroll", handleScroll);
     };
   }, [scrolled]);
 
@@ -37,19 +36,19 @@ const Navbar: React.FC = () => {
       if (isMenuOpen) setIsMenuOpen(false);
     };
 
-    document.addEventListener('click', handleClickOutside);
+    document.addEventListener("click", handleClickOutside);
     return () => {
-      document.removeEventListener('click', handleClickOutside);
+      document.removeEventListener("click", handleClickOutside);
     };
   }, [isMenuOpen]);
 
   return (
     <header
       className={cn(
-        'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         scrolled
-          ? 'bg-white/90 backdrop-blur-md shadow-sm py-3'
-          : 'bg-transparent py-5'
+          ? "bg-white/90 backdrop-blur-md shadow-sm py-3"
+          : "bg-transparent py-5"
       )}
     >
       <div className="container mx-auto px-4 md:px-6">
@@ -68,10 +67,7 @@ const Navbar: React.FC = () => {
                 {link.name}
               </a>
             ))}
-            <a
-              href="#contact"
-              className="btn-primary ml-2"
-            >
+            <a href="#contact" className="btn-primary ml-2">
               Free Demo
             </a>
           </nav>
@@ -93,10 +89,43 @@ const Navbar: React.FC = () => {
           </button>
 
           {/* Mobile Navigation */}
-          <div 
+
+          {/* Mobile Navigation */}
+          {/* Mobile Navigation */}
+          <div
             className={cn(
-              'fixed inset-0 bg-white z-40 flex flex-col p-8 pt-24 transition-transform duration-300 ease-in-out md:hidden',
-              isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+              "fixed inset-0 bg-white z-40 flex flex-col p-8 pt-24 w-full h-screen overflow-y-auto transition-transform duration-300 ease-in-out md:hidden",
+              isMenuOpen ? "translate-x-0" : "translate-x-full"
+            )}
+            onClick={(e) => e.stopPropagation()} // Prevents closing when clicking inside
+          >
+            <div className="flex flex-col space-y-8">
+              {" "}
+              {/* Increased spacing */}
+              {navLinks.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  className="text-lingofun-dark hover:text-lingofun-primary text-2xl font-medium transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {link.name}
+                </a>
+              ))}
+              <a
+                href="#contact"
+                className="btn-primary text-center mt-8 py-3"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Free Demo
+              </a>
+            </div>
+          </div>
+
+          {/* <div
+            className={cn(
+              "fixed inset-0 bg-white z-40 flex flex-col p-8 pt-24 transition-transform duration-300 ease-in-out md:hidden",
+              isMenuOpen ? "translate-x-0" : "translate-x-full"
             )}
             onClick={(e) => e.stopPropagation()}
           >
@@ -119,7 +148,7 @@ const Navbar: React.FC = () => {
                 Free Demo
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </header>
