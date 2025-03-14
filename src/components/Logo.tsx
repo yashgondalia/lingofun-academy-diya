@@ -54,7 +54,7 @@ const Logo: React.FC<LogoProps> = ({
 }) => {
   const sizeClass = {
     sm: variant === "full" ? "h-8" : "h-8",
-    md: variant === "full" ? "h-10" : "h-10",
+    md: variant === "full" ? "h-20" : "h-20",
     lg: variant === "full" ? "h-12" : "h-12",
   };
 
@@ -68,9 +68,9 @@ const Logo: React.FC<LogoProps> = ({
 
         {/* Replacing the "L" with your logo */}
         <img
-          src="/lovable-uploads/lingofunlogo.jpg"
+          src="\lovable-uploads\newlingofunlogo.jpg"
           alt="LinGoFun Logo"
-          className="relative z-10 w-12 h-12 object-cover"
+          className="relative z-10 w-32 h-32 object-cover"
         />
       </div>
 
@@ -78,7 +78,7 @@ const Logo: React.FC<LogoProps> = ({
       {variant === "full" && (
         <div className="ml-2 flex flex-col">
           <span className="font-serif font-bold text-3xl text-lingofun-info leading-tight">
-            The LinGo<span className="text-lingofun-primary">Fun</span>
+            The LinGo<span className="text-lingofun-primary">Funn</span>
           </span>
           <span className="text-xs text-lingofun-dark/90 text-4xl">
             Academy
