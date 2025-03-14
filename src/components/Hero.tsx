@@ -48,7 +48,7 @@ const Hero: React.FC = () => {
             </h1>
 
             <p className="text-lg text-gray-600 max-w-xl">
-              Join The LinGoFun Academy for interactive English and French
+              Join The LinGoFunn Academy for interactive English and French
               classes focused on cultural immersion and practical language
               skills for all ages.
             </p>
