@@ -54,7 +54,7 @@ const Logo: React.FC<LogoProps> = ({
 }) => {
   const sizeClass = {
     sm: variant === "full" ? "h-8" : "h-8",
-    md: variant === "full" ? "h-20" : "h-20",
+    md: variant === "full" ? "h-13" : "h-13",
     lg: variant === "full" ? "h-12" : "h-12",
   };
 
@@ -70,7 +70,7 @@ const Logo: React.FC<LogoProps> = ({
         <img
           src="\lovable-uploads\newlingofunlogo.jpg"
           alt="LinGoFun Logo"
-          className="relative z-10 w-32 h-32 object-cover"
+          className="relative z-10 w-[74px] h-[94px] object-cover"
         />
       </div>
 

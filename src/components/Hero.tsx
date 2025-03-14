@@ -31,8 +31,8 @@ const Hero: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left column - Text content */}
           <div className="flex flex-col space-y-6 animate-fade-up">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-lingofun-dark leading-tight">
-              Unlock the world with fluent
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-lingofun-dark leading-tight mt-0">
+              unlock the world with fluent
               <div className="relative overflow-hidden h-[1.2em] w-full mt-1 mb-0">
                 <span
                   className={`absolute text-lingofun-primary transition-all duration-500 ${
