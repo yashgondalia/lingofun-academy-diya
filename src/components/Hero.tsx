@@ -21,17 +21,17 @@ const Hero: React.FC = () => {
   return (
     <section
       id="home"
-      className="h-[80vh] flex items-center relative pt-4 pb-4 overflow-hidden"
+      className="min-h-screen flex items-center relative pt-0 pb-0 overflow-hidden"
     >
       {/* Background decorative elements */}
       <div className="absolute -top-24 -right-24 w-96 h-96 bg-lingofun-secondary/10 rounded-full filter blur-3xl"></div>
       <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-lingofun-primary/10 rounded-full filter blur-3xl"></div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left column - Text content */}
           <div className="flex flex-col space-y-6 animate-fade-up">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-lingofun-dark leading-tight mt-[-20px]">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-lingofun-dark leading-tight mt-0">
               Unlock the world with fluent
               <div className="relative overflow-hidden h-[1.2em] w-full mt-1 mb-0">
                 <span

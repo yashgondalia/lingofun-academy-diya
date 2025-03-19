@@ -62,7 +62,7 @@ const Logo: React.FC<LogoProps> = ({
     <div className={`flex items-center ${className}`}>
       {/* Logo icon */}
       <div
-        className={`relative ${sizeClass[size]} aspect-square bg-lingofun-primary text-white rounded-lg flex items-center justify-center overflow-hidden`}
+        className={`relative ${sizeClass[size]} aspect-square bg-[#14213D] text-white rounded-lg flex items-center justify-center overflow-hidden`}
       >
         <div className="absolute inset-0 bg-gradient-to-tr from-lingofun-primary to-lingofun-primary/80"></div>
 
