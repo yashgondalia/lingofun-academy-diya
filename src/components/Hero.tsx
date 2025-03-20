@@ -118,7 +118,7 @@ const Hero: React.FC = () => {
                   </a>
                 </div> */}
                 <a
-                  href="https://wa.me/917045595990?text=Hello,%20I%20want%20to%20learn%20French!"
+                  href="https://wa.me/917045595990?text=Hello,%20I%20want%20to%20enquire%20about%20English/French%20course!"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="fixed bottom-8 right-4 z-50 flex items-center gap-2 bg-green-500 text-white font-semibold px-4 py-2 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 ease-in-out transform hover:scale-105"
