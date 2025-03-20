@@ -101,13 +101,13 @@ const Hero: React.FC = () => {
                 />
 
                 {/* whatsapp connect */}
-                <div className="fixed bottom-4 right-4 z-50">
+                {/* <div className="fixed bottom-4 right-4 z-50">
                   <a
                     href="https://wa.me/917045595990?text=Hello,%20I%20want%20to%20learn%20French!
 " // Replace with your WhatsApp number
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center bg-green-500 text-white font-bold px-4 py-2 rounded-full shadow-lg hover:bg-green-600 transition"
+                    className="flex items-center bg-blue-500 text-white font-bold px-6 py-5 rounded-full shadow-lg hover:bg-green-600 transition"
                   >
                     <img
                       src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
@@ -116,7 +116,20 @@ const Hero: React.FC = () => {
                     />
                     Reach us on WhatsApp
                   </a>
-                </div>
+                </div> */}
+                <a
+                  href="https://wa.me/917045595990?text=Hello,%20I%20want%20to%20learn%20French!"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="fixed bottom-8 right-4 z-50 flex items-center gap-2 bg-green-500 text-white font-semibold px-4 py-2 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 ease-in-out transform hover:scale-105"
+                >
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                    alt="WhatsApp"
+                    className="w-6 h-8"
+                  />
+                  <span>Reach us on WhatsApp</span>
+                </a>
 
                 {/* Decorative floating cards */}
                 <div className="absolute -top-4 -right-4 transform rotate-12 animate-float">

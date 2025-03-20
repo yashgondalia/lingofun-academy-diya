@@ -166,7 +166,7 @@ const Footer = () => {
                 href="https://www.instagram.com/thelingofunn.academy?igsh=MzgwdDJqenZjZ2Ry&utm_source=qr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
+                className="bg-white p-2 rounded-full text-blue-600 hover:text-white transition-colors"
               >
                 <Instagram size={30} />
               </a>
@@ -174,7 +174,7 @@ const Footer = () => {
                 href="http://linkedin.com/in/diya-wadhwana-87b80a270"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
+                className="bg-white p-2 rounded-full text-blue-600 hover:text-white transition-colors"
               >
                 <Linkedin size={30} />
               </a>
@@ -254,16 +254,16 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-500 text-sm">
+        <div className="border-t border-gray-500 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-gray-400 text-base">
             &copy; {currentYear} The LinGoFunn Academy. All rights reserved.
           </p>
           <div className="mt-4 md:mt-0">
-            <ul className="flex space-x-6 text-sm">
+            <ul className="flex space-x-6 text-base">
               <li>
                 <a
                   href="#"
-                  className="text-gray-500 hover:text-white transition-colors"
+                  className="text-gray-400 hover:text-white transition-colors"
                 >
                   Privacy Policy
                 </a>
@@ -271,7 +271,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-gray-500 hover:text-white transition-colors"
+                  className="text-gray-400 hover:text-white transition-colors"
                 >
                   Terms of Service
                 </a>
