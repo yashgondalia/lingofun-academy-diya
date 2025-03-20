@@ -166,7 +166,7 @@ const Footer = () => {
                 href="https://www.instagram.com/thelingofunn.academy?igsh=MzgwdDJqenZjZ2Ry&utm_source=qr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white p-2 rounded-full text-blue-600 hover:text-white transition-colors"
+                className="bg-white p-2 rounded-full text-pink-600 hover:text-pink transition-colors"
               >
                 <Instagram size={30} />
               </a>
@@ -174,7 +174,7 @@ const Footer = () => {
                 href="http://linkedin.com/in/diya-wadhwana-87b80a270"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white p-2 rounded-full text-blue-600 hover:text-white transition-colors"
+                className="bg-white p-2 rounded-full text-blue-600 hover:text-blue transition-colors"
               >
                 <Linkedin size={30} />
               </a>
