@@ -55,7 +55,6 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Logo />
-
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
@@ -71,7 +70,6 @@ const Navbar: React.FC = () => {
               Free Demo
             </a>
           </nav>
-
           {/* Mobile menu button */}
           <button
             className="md:hidden z-50"
@@ -87,68 +85,36 @@ const Navbar: React.FC = () => {
               <Menu className="h-6 w-6 text-lingofun-dark" />
             )}
           </button>
-
           {/* Mobile Navigation */}
-
           {/* Mobile Navigation */}
           {/* Mobile Navigation */}
           <div
             className={cn(
-              "fixed inset-0 bg-white z-40 flex flex-col p-8 pt-24 w-full h-screen overflow-y-auto transition-transform duration-300 ease-in-out md:hidden",
+              "fixed inset-0 bg-white z-40 flex flex-col w-full h-screen p-6 pt-20 md:hidden transition-transform duration-300 ease-in-out",
               isMenuOpen ? "translate-x-0" : "translate-x-full"
             )}
-            onClick={(e) => e.stopPropagation()} // Prevents closing when clicking inside
           >
-            <div className="flex flex-col space-y-8">
-              {" "}
-              {/* Increased spacing */}
-              {navLinks.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  className="text-lingofun-dark hover:text-lingofun-primary text-2xl font-medium transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {link.name}
-                </a>
-              ))}
-              <a
-                href="#contact"
-                className="btn-primary text-center mt-8 py-3"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Free Demo
-              </a>
-            </div>
-          </div>
+            {/* Close Button (REMOVE DUPLICATE) */}
 
-          {/* <div
-            className={cn(
-              "fixed inset-0 bg-white z-40 flex flex-col p-8 pt-24 transition-transform duration-300 ease-in-out md:hidden",
-              isMenuOpen ? "translate-x-0" : "translate-x-full"
-            )}
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="flex flex-col space-y-6">
-              {navLinks.map((link) => (
+            {/* Logo */}
+            <div className="absolute top-6 left-6">
+              <Logo /> {/* Keep your existing logo component */}
+            </div>
+
+            {/* Navigation Links */}
+            <nav className="flex flex-col space-y-4 mt-12 text-lg font-semibold text-gray-900">
+              {navLinks.map((link, index) => (
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-lingofun-dark hover:text-lingofun-primary text-2xl font-medium transition-colors"
+                  className="py-4 border-b border-gray-300 hover:text-lingofun-primary transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.name}
                 </a>
               ))}
-              <a
-                href="#contact"
-                className="btn-primary text-center mt-4"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Free Demo
-              </a>
-            </div>
-          </div> */}
+            </nav>
+          </div>
         </div>
       </div>
     </header>

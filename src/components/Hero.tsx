@@ -100,23 +100,6 @@ const Hero: React.FC = () => {
                   className="w-full h-full object-cover opacity-90"
                 />
 
-                {/* whatsapp connect */}
-                {/* <div className="fixed bottom-4 right-4 z-50">
-                  <a
-                    href="https://wa.me/917045595990?text=Hello,%20I%20want%20to%20learn%20French!
-" // Replace with your WhatsApp number
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center bg-blue-500 text-white font-bold px-6 py-5 rounded-full shadow-lg hover:bg-green-600 transition"
-                  >
-                    <img
-                      src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-                      alt="WhatsApp"
-                      className="w-6 h-6 mr-2"
-                    />
-                    Reach us on WhatsApp
-                  </a>
-                </div> */}
                 <a
                   href="https://wa.me/917045595990?text=Hello,%20I%20want%20to%20enquire%20about%20English/French%20course!"
                   target="_blank"
