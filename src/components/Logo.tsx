@@ -68,9 +68,9 @@ const Logo: React.FC<LogoProps> = ({
 
         {/* Replacing the "L" with your logo */}
         <img
-          src="\lovable-uploads\newlingofunlogo.jpg"
+          src="\lovable-uploads\putlogo.jpg"
           alt="LinGoFun Logo"
-          className="relative z-10 w-[74px] h-[94px] object-cover"
+          className="relative z-10 w-[84px] h-[94px] object-cover"
         />
       </div>
 
