@@ -70,7 +70,8 @@ const Logo: React.FC<LogoProps> = ({
         <img
           src="\lovable-uploads\putlogo.jpg"
           alt="LinGoFun Logo"
-          className="relative z-10 w-[84px] h-[94px] object-cover"
+          className="relative z-10 w-[125px] h-[125px] object-cover "
+          style={{ transform: "scale(1.35)" }}
         />
       </div>
 
