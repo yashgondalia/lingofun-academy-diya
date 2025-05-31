@@ -81,7 +81,7 @@ const Logo: React.FC<LogoProps> = ({
           <span className="font-serif font-bold text-3xl text-lingofun-info leading-tight">
             The LinGo<span className="text-lingofun-primary">Funn</span>
           </span>
-          <span className="text-[22px] text-lingofun-dark/90">Academy</span>
+          <span className="text-[16px] text-lingofun-dark/90">Academy</span>
         </div>
       )}
     </div>
